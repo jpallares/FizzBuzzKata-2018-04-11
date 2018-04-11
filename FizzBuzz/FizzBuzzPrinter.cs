@@ -13,11 +13,9 @@
         
         public void Print()
         {
-            _printer.WriteLine("1");
-
-            for (int i = 0; i < 100; i++)
+            for (int i = 1; i <= 100; i++)
             {
-                _fizzBuzz.Execute(i);
+                _printer.WriteLine(_fizzBuzz.Execute(i));
             }
         }
     }
