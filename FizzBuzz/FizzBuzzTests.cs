@@ -7,22 +7,12 @@ namespace FizzBuzz
     {
         private FizzBuzz fizzBuzz = new FizzBuzz();
 
-        [Test]
-        public void Outputs_1_for_input_1()
+        [TestCase(1)]
+        [TestCase(2)]
+        [TestCase(4)]
+        public void Outputs_input_if_not_divisible_by_3_nor_5(int input)
         {
-            Assert.AreEqual("1", fizzBuzz.Execute(1));
-        }
-
-        [Test]
-        public void Outputs_2_for_input_2()
-        {
-            Assert.AreEqual("2", fizzBuzz.Execute(2));
-        }
-
-        [Test]
-        public void Outputs_4_for_input_4()
-        {
-            Assert.AreEqual("4", fizzBuzz.Execute(4));
+            Assert.AreEqual(input.ToString(), fizzBuzz.Execute(input));
         }
 
         [TestCase(3)]
@@ -33,28 +23,24 @@ namespace FizzBuzz
             Assert.AreEqual("Fizz", fizzBuzz.Execute(input));
         }
 
-        [Test]
-        public void Outputs_Buzz_for_input_5()
+        [TestCase(5)]
+        [TestCase(10)]
+        [TestCase(20)]
+        public void Outputs_Buzz_for_input_divisible_by_5(int input)
         {
-            Assert.AreEqual("Buzz", fizzBuzz.Execute(5));
-        }
-
-        [Test]
-        public void Outputs_Buzz_for_input_10()
-        {
-            Assert.AreEqual("Buzz", fizzBuzz.Execute(10));
-        }
-
-        [Test]
-        public void Outputs_Buzz_for_input_20()
-        {
-            Assert.AreEqual("Buzz", fizzBuzz.Execute(20));
+            Assert.AreEqual("Buzz", fizzBuzz.Execute(input));
         }
 
         [Test]
         public void Outputs_FizzBuzz_for_input_15()
         {
             Assert.AreEqual("FizzBuzz", fizzBuzz.Execute(15));
+        }
+
+        [Test]
+        public void Outputs_FizzBuzz_for_input_30()
+        {
+            Assert.AreEqual("FizzBuzz", fizzBuzz.Execute(30));
         }
     }
 }
