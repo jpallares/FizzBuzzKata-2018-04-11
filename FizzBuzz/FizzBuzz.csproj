@@ -51,8 +51,9 @@
   <ItemGroup>
     <Compile Include="FizzBuzz.cs" />
     <Compile Include="FizzBuzzPrinter.cs" />
-    <Compile Include="FizzBuzzPrinterTests.cs" />
-    <Compile Include="FizzBuzzTests.cs" />
+    <Compile Include="FizzBuzzPrinterShould.cs" />
+    <Compile Include="FizzBuzzShould.cs" />
+    <Compile Include="IFizzBuzz.cs" />
     <Compile Include="ILinePrinter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
