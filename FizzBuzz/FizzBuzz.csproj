@@ -50,8 +50,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FizzBuzz.cs" />
+    <Compile Include="FizzBuzzPrinter.cs" />
     <Compile Include="FizzBuzzPrinterTests.cs" />
     <Compile Include="FizzBuzzTests.cs" />
+    <Compile Include="ILinePrinter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

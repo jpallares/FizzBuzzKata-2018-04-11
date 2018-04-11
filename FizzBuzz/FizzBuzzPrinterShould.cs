@@ -1,11 +1,10 @@
-﻿using System;
-using Moq;
+﻿using Moq;
 using NUnit.Framework;
 
 namespace FizzBuzz
 {
     [TestFixture]
-    public class FizzBuzzPrinterTests
+    public class FizzBuzzPrinterShould
     {
         private Mock<ILinePrinter> mockPrinter;
         private FizzBuzzPrinter fizzBuzzPrinter;
@@ -14,18 +13,21 @@ namespace FizzBuzz
         public void SetUp()
         {
             mockPrinter = new Mock<ILinePrinter>();
-            fizzBuzzPrinter = new FizzBuzzPrinter(mockPrinter);
+            fizzBuzzPrinter = new FizzBuzzPrinter(mockPrinter.Object);
         }
 
         [Test]
-        public void Prints_1()
+        public void Print_1()
         {
+            fizzBuzzPrinter.Print();
             mockPrinter.Verify(m => m.WriteLine("1"));
         }
 
-        private interface ILinePrinter
+        [Test]
+        public void Use_call_FizzBuzz_100_times()
         {
-            void WriteLine(string output);
+            fizzBuzzPrinter.Print();
+            mockPrinter.Verify(m => m.WriteLine(It.IsAny<string>()), Times.Exactly(100));
         }
     }
 }

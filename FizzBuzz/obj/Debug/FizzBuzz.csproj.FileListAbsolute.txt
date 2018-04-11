@@ -6,3 +6,7 @@ D:\katas\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.csprojResolveAssemblyReference.cac
 D:\katas\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.csproj.CoreCompileInputs.cache
 D:\katas\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.dll
 D:\katas\FizzBuzz\FizzBuzz\obj\Debug\FizzBuzz.pdb
+D:\katas\FizzBuzz\FizzBuzz\bin\Debug\Castle.Core.dll
+D:\katas\FizzBuzz\FizzBuzz\bin\Debug\Moq.dll
+D:\katas\FizzBuzz\FizzBuzz\bin\Debug\Castle.Core.xml
+D:\katas\FizzBuzz\FizzBuzz\bin\Debug\Moq.xml
