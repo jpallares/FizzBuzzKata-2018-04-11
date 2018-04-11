@@ -54,5 +54,11 @@ namespace FizzBuzz
         {
             Assert.AreEqual("Fizz", fizzBuzz.Execute(9));
         }
+
+        [Test]
+        public void Outputs_Buzz_for_input_10()
+        {
+            Assert.AreEqual("Buzz", fizzBuzz.Execute(10));
+        }
     }
 }
