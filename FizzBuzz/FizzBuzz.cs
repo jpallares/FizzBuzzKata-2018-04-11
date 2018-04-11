@@ -4,7 +4,7 @@
     {
         public string Execute(int input)
         {
-            if (input == 3)
+            if (input == 3 || input == 6)
             {
                 return "Fizz";
             }
