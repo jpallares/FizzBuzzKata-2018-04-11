@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace FizzBuzz
 {
@@ -46,6 +41,12 @@ namespace FizzBuzz
         public void Outputs_FizzBuzz_for_input_15()
         {
             Assert.AreEqual("FizzBuzz", fizzBuzz.Execute(15));
+        }
+
+        [Test]
+        public void Outputs_Fizz_for_input_6()
+        {
+            Assert.AreEqual("Fizz", fizzBuzz.Execute(6));
         }
     }
 }
