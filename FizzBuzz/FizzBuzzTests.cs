@@ -31,22 +31,12 @@ namespace FizzBuzz
             Assert.AreEqual("Buzz", fizzBuzz.Execute(input));
         }
 
-        [Test]
-        public void Outputs_FizzBuzz_for_input_15()
+        [TestCase(15)]
+        [TestCase(30)]
+        [TestCase(45)]
+        public void Outputs_FizzBuzz_for_input_divisible_by_15(int input)
         {
-            Assert.AreEqual("FizzBuzz", fizzBuzz.Execute(15));
-        }
-
-        [Test]
-        public void Outputs_FizzBuzz_for_input_30()
-        {
-            Assert.AreEqual("FizzBuzz", fizzBuzz.Execute(30));
-        }
-
-        [Test]
-        public void Outputs_FizzBuzz_for_input_45()
-        {
-            Assert.AreEqual("FizzBuzz", fizzBuzz.Execute(45));
+            Assert.AreEqual("FizzBuzz", fizzBuzz.Execute(input));
         }
     }
 }
